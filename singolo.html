@@ -9,7 +9,7 @@
     <div class="container">
       <header class="header flex-container">
         <h1 class="logo-container flex-items">
-          <a href="/" title="logo" class="header-logo">Singolo<sup>*</sup></a>
+          <a href="/" title="logo" class="header-logo">Singolo<span>*</span></a>
         </h1>
         <nav class="navigation flex-items">
           <ul class="flex-container">
@@ -35,10 +35,19 @@
       <div class="main">
         <div class="block-slider">
           <div class="slider-item">
-            <div class="phone vertical-orient"></div>
-            <div class="phone horizont-orient"></div>
+            <div class="phone vertical-orient">
+              <span class="phone-camera"></span>
+              <span class="phone-dynamic"></span>
+              <img src="assets/yellow_img.png" class="phone-img vertical-img" title="Vertical phone image" />
+              <span class="phone-button"></span>
+            </div>
+            <div class="phone horizont-orient">
+              <span class="phone-camera"></span>
+              <span class="phone-dynamic"></span>
+              <img src="assets/blue_img.png" class="phone-img horizontal-img" title="Horizontal phone image" />
+              <span class="phone-button"></span>
+            </div>
           </div>
-<!--           <button class="slider-controller prev-arr">❮</button> -->
           <svg class="slider-controller prev-arr" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink"
                width="16px" height="27px">
@@ -47,9 +56,8 @@
           <svg class="slider-controller next-arr" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink"
              width="16px" height="27px">
-            <image  x="0px" y="0px" width="16px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAbCAMAAABC6v+QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEXKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUn///8s0/OlAAAAQnRSTlMAZMjOewJQoZ+Md4kSxoUX1HIj2HMk1yzn+ls16PxYNvRHQ/PxQkvq04/3yjHyQTxM5lwl4vtd2W4W1XWai1OxuWofSiN1AAAAAWJLR0RDZ9ANYgAAAAd0SU1FB+QCEgQmAusIdZQAAACpSURBVBjTXdFXFoMgEEBRTEzvXVNU0nvvPex/UYkzMBj5e/ccYUDGjEjUjDG94uK3EgFI+iBSGtIAIkOQzaHkSQpFlBJJuYJSJanVUQyShgVgN0labZCOQ+KieJyk2wPpD0iGI5CxHnkCMKV2PIAZfYFtzVUvcM+l7JU8g/9PYa9Vb7C3snd76MNR3fWEdz3LvlxDr2Fi32jCe+iNGff7Efgv7Pl6fwL5BeaaLHgTj+sMAAAAAElFTkSuQmCC" />
+            <image x="0px" y="0px" width="16px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAbCAMAAABC6v+QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEXKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUnKRUn///8s0/OlAAAAQnRSTlMAZMjOewJQoZ+Md4kSxoUX1HIj2HMk1yzn+ls16PxYNvRHQ/PxQkvq04/3yjHyQTxM5lwl4vtd2W4W1XWai1OxuWofSiN1AAAAAWJLR0RDZ9ANYgAAAAd0SU1FB+QCEgQmAusIdZQAAACpSURBVBjTXdFXFoMgEEBRTEzvXVNU0nvvPex/UYkzMBj5e/ccYUDGjEjUjDG94uK3EgFI+iBSGtIAIkOQzaHkSQpFlBJJuYJSJanVUQyShgVgN0labZCOQ+KieJyk2wPpD0iGI5CxHnkCMKV2PIAZfYFtzVUvcM+l7JU8g/9PYa9Vb7C3snd76MNR3fWEdz3LvlxDr2Fi32jCe+iNGff7Efgv7Pl6fwL5BeaaLHgTj+sMAAAAAElFTkSuQmCC" />
           </svg>
-<!--           <button class="slider-controller next-arr">❯</button> -->
         </div>
         <section class="block-services">
           <h2>Our services</h2>
@@ -57,58 +65,80 @@
           <ul class="services-items flex-container outer">
             <li class="flex-items outer">
               <div class="flex-container inner">
-                <div class="flex-items icons">
-                  <img src="assets/icons/pen.svg" alt="Icon pen"/>
+                <div class="item-icon">
+                  <div class="flex-icon"> 
+                    <img src="assets/icons/pen.svg" alt="Icon pen"/>
+                  </div>
                 </div>
-                <div class="flex-items inner">
+                <div class="flex-item-description">
                   <h3>Custom design</h3>
                   <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                 </div>
               </div>
             </li>
             <li class="flex-items outer">
-              <div class="flex-items icons">
-                <img src="assets/icons/bulb.svg" alt="Icon light bulb"/>
-              </div>
-              <div class="flex-items inner">
-                <h3>Innovative ideas</h3>
-                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-              </div>
-            </li>
-            <li class="flex-items outer">
-              <div class="flex-items icons">
-                <img src="assets/icons/heart.svg" alt="Icon heart"/>
-              </div>
-              <div class="flex-items inner">
-                <h3>Love is the answer</h3>
-                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+              <div class="flex-container inner">
+                <div class="item-icon">  
+                  <div class="flex-icon">
+                    <img src="assets/icons/bulb.svg" alt="Icon light bulb"/>
+                  </div>
+                </div>
+                <div class="flex-item-description">
+                  <h3>Innovative ideas</h3>
+                  <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                </div>
               </div>
             </li>
             <li class="flex-items outer">
-              <div class="flex-items icons">
-                <img src="assets/icons/phone.svg" alt="Icon mobile"/>
-              </div>
-              <div class="flex-items inner">
-                <h3>Responsive layout</h3>
-                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-              </div>
-            </li>
-            <li class="flex-items outer">
-              <div class="flex-items icons">
-                <img src="assets/icons/bubble.svg" alt="Icon talk"/>
-              </div>
-              <div class="flex-items inner">
-                <h3>24/7 support</h3>
-                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+              <div class="flex-container inner">
+                <div class="item-icon">
+                  <div class="flex-icon">
+                    <img src="assets/icons/heart.svg" alt="Icon heart"/>
+                  </div>
+                </div>
+                <div class="flex-item-description">
+                  <h3>Love is the answer</h3>
+                  <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                </div>
               </div>
             </li>
             <li class="flex-items outer">
-              <div class="flex-items icons">
-                <img src="assets/icons/star.svg" alt="Icon star"/>
+              <div class="flex-container inner">
+                <div class="item-icon">
+                  <div class="flex-icon">
+                    <img src="assets/icons/phone.svg" alt="Icon mobile"/>
+                  </div>
+                </div>
+                <div class="flex-item-description">
+                  <h3>Responsive layout</h3>
+                  <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                </div>
               </div>
-              <div class="flex-items inner">
-                <h3>Feel like a star</h3>
-                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+            </li>
+            <li class="flex-items outer">
+              <div class="flex-container inner">
+                <div class="item-icon">
+                  <div class="flex-icon">
+                    <img src="assets/icons/bubble.svg" alt="Icon talk"/>
+                  </div>
+                </div>
+                <div class="flex-item-description">
+                  <h3>24/7 support</h3>
+                  <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                </div>
+              </div>
+            </li>
+            <li class="flex-items outer">
+              <div class="flex-container inner">
+                <div class="item-icon">
+                  <div class="flex-icon">
+                    <img src="assets/icons/star.svg" alt="Icon star"/>
+                  </div>
+                </div>
+                <div class="flex-item-description">
+                  <h3>Feel like a star</h3>
+                  <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                </div>
               </div>
             </li>
           </ul>
