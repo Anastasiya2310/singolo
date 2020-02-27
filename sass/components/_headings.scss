@@ -1,0 +1,22 @@
+@import "../base/_fonts.scss";
+@import "../abstracts/_variables.scss";
+
+.heading_hidden {
+	display: none;
+}
+
+.heading-2 {
+	font-family: $font-lato-black;
+	font-size: 3rem;
+	color: $color-heading;
+	line-height: 17.86px;
+	letter-spacing: 0.3px;
+	text-transform: capitalize;
+}
+
+.heading-3 {
+	font-family: $font-lato-black;
+	font-size: 1.8rem;
+	color: $color-heading;
+	text-transform: capitalize;
+}

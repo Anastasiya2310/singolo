@@ -1,0 +1,31 @@
+@import "../base/_fonts.scss";
+@import "../abstracts/_variables.scss";
+
+.tags {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 1px;
+	margin-bottom: 25px;
+	list-style: none;
+	font-family: $font-lato-regular;
+	font-size: 1.2rem;
+	line-height: 0.8;
+}
+
+.tags-item {
+	margin-right: 9px;
+}
+
+.tags-item:last-child {
+	margin-right: 0;
+}
+
+.tags-item-link {
+	padding: 3px 7px;
+	color: $color-text;
+	text-transform: capitalize;
+	text-decoration: none;
+	border: 1px solid $color-text;
+	border-radius: 5px;
+}

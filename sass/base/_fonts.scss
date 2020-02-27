@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('./fonts/lato_bold/lato-bold.woff2') format('woff2'),
+       url('./fonts/lato_bold/lato-bold.woff') format('woff'),
+       url('./fonts/lato_bold/lato-bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Black';
+  src: url('./fonts/lato_black/lato-black.woff2') format('woff2'),
+       url('./fonts/lato_black/lato-black.woff') format('woff'),
+       url('./fonts/lato_black/lato-black.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url('./fonts/lato_light/lato-light.woff2') format('woff2'),
+       url('./fonts/lato_light/lato-light.woff') format('woff'),
+       url('../fonts/lato_light/lato-light.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('./fonts/lato_regular/lato-regular.woff2') format('woff2'),
+       url('./fonts/lato_regular/lato-regular.woff') format('woff'),
+       url('./fonts/lato_regular/lato-regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}

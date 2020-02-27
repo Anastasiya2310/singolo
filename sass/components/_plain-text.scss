@@ -1,0 +1,19 @@
+@import "../base/_fonts.scss";
+@import "../abstracts/_variables.scss";
+
+.description {
+	color: $color-text;
+}
+
+.description-title {
+	font-family: $font-lato-light;
+	font-size: 1.8rem;
+	line-height: 30px;
+	padding-top: 2px;
+}
+
+.about-description {
+	font-family: $font-lato-regular;
+	font-size: 1.2rem;
+	line-height: 21.56px;
+}
