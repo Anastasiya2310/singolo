@@ -14,18 +14,23 @@
 }
 
 .tags-item {
-	margin-right: 9px;
-}
+	margin-right: 10px;
 
-.tags-item:last-child {
-	margin-right: 0;
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .tags-item-link {
-	padding: 3px 7px;
+	padding: 3px 6px;
 	color: $color-text;
 	text-transform: capitalize;
 	text-decoration: none;
 	border: 1px solid $color-text;
 	border-radius: 5px;
+
+	&:hover {
+		color: $color-light-bg;
+		border: 1px solid $color-light-bg;
+	}
 }

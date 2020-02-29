@@ -1,13 +1,50 @@
 
 
 .socials {
+	display: flex;
+	justify-content: start;
+	align-items: center;
 	padding-left: 0;
 	list-style: none;
+	margin-top: 25px;
 }
 
-// .facebook {
-// 	display: block;
-// 	background: url('assets/icons/social-f.svg')0 0 no-repeat;
-// 	width: 34px;
-// 	height: 34px;
-// }
+.social-item {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin-right: 6px;
+}
+
+
+.facebook {
+	background: url('assets/icons/icon-facebook.svg')0 0 no-repeat;
+
+	&:hover {
+		background: url('assets/icons/icon-facebook-hover.svg')0 0 no-repeat;
+	}
+}
+
+.google {
+	background: url('assets/icons/icon-google.svg')0 0 no-repeat;
+
+	&:hover{
+		background: url('assets/icons/icon-google-hover.svg')0 0 no-repeat;
+	}
+}
+
+.twitter {
+	background: url('assets/icons/icon-twitter.svg')0 0 no-repeat;
+
+	&:hover {
+		background: url('assets/icons/icon-twitter-hover.svg')0 0 no-repeat;
+	}
+}
+
+.linkedin {
+	background: url('assets/icons/icon-linkedin.svg')0 0 no-repeat;
+
+	&:hover {
+		background: url('assets/icons/icon-linkedin-hover.svg')0 0 no-repeat;
+	}
+}
