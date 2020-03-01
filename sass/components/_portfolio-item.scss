@@ -1,0 +1,17 @@
+@import "../base/_fonts.scss";
+@import "../abstracts/_variables.scss";
+
+.portfolio-list {
+	display: flex;
+	max-height: 620px;
+	overflow: hidden;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.portfolio-item {
+	margin-bottom: 18px;
+}
