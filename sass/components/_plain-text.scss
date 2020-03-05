@@ -12,8 +12,28 @@
 	padding-top: 2px;
 }
 
-.about-description {
+.about-description,
+.contact-list,
+.small-text {
 	font-family: $font-lato-regular;
 	font-size: 1.2rem;
 	line-height: 21.56px;
+}
+
+.contact-description,
+.contact-list {
+	color: $color-text-red-block;
+}
+
+.contact-info {
+	margin: 0 10px;
+}
+
+.contact-list {
+	padding-left: 0;
+	list-style: none;
+
+	.contact-list-item {
+		padding-left: 30px;
+	}
 }

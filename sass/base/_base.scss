@@ -26,3 +26,31 @@ html {
 .about-block {
 	background-color: $color-light-bg;
 }
+
+.contact-form-block {
+	background-color: $color-red-bg;
+	border-bottom: 6px solid #ea676b;
+}
+
+.form-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer {
+	background-color: $color-dark-bg;
+
+	.footer-wrapper {
+		padding-top: 0;
+		padding-bottom: 0;
+		min-height: 76px;
+
+		.wrap-text-block {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
+
+
