@@ -1,0 +1,40 @@
+@import "../base/_fonts.scss";
+@import "../abstracts/_variables.scss";
+
+.form-wrapper {
+	margin-top: 43px;
+	
+	.contact-form {
+		min-width: 620px;
+		margin-right: 10px;
+
+		input,
+		textarea {
+			display: block;
+			box-sizing: border-box;
+			width: 100%;
+			padding: 12px 15px;
+			margin-bottom: 15px;
+			background-color: $color-input-red;
+			border-radius: 5px;
+			border: none;
+			font-family: $font-lato-regular;
+			font-size: 1.2rem;
+			color: $color-text-red-block;
+
+			&::placeholder {
+				color: #f48c8f;
+			}
+
+			&:focus {
+				outline: none;
+				box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+			}
+		}
+
+		textarea {
+			resize: none;
+			min-height: 203px;
+		}
+	}
+}

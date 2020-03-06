@@ -1,11 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" viewBox="0 0 22 32">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #666d89;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="phone" class="cls-1" d="M79,1052H63a3,3,0,0,0-3,3v26a3,3,0,0,0,3,3H79a3,3,0,0,0,3-3v-26A3,3,0,0,0,79,1052Zm1,29a1,1,0,0,1-1,1H63a1,1,0,0,1-1-1v-2H80v2Zm0-3H62v-20H80v20Zm0-21H62v-2a1,1,0,0,1,1-1H79a1,1,0,0,1,1,1v2Zm-7-1.5a0.5,0.5,0,0,1-.5.5h-3a0.5,0.5,0,0,1-.5-0.5h0a0.5,0.5,0,0,1,.5-0.5h3a0.5,0.5,0,0,1,.5.5h0Zm-1,25a0.5,0.5,0,0,1-.5.5h-1a0.5,0.5,0,0,1-.5-0.5h0a0.5,0.5,0,0,1,.5-0.5h1a0.5,0.5,0,0,1,.5.5h0Z" transform="translate(-60 -1052)"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11">
+  <image id="phone" width="11" height="11" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAgElEQVQYlYWPQQ2FMBBEHz8IQAISPg6QAA5ACk5ACRY4wg0HIIEMYcmmCe2cpt3X6Wx2rhsR/YEZKIA+BQus7fCLkU/yqxTcOr+n4NL5KdbZL7cD1VeyB63OKdgGB9ABTQD2wCKjGoJsEErgaJf5B6iO+vpONKmGXnto0DIhCHABkc0ezLvzeiUAAAAASUVORK5CYII="/>
 </svg>
