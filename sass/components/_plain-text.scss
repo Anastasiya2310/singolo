@@ -14,10 +14,17 @@
 
 .about-description,
 .contact-list,
-.small-text {
+.small-text,
+.copyright {
 	font-family: $font-lato-regular;
 	font-size: 1.2rem;
 	line-height: 21.56px;
+}
+
+.form-wrapper {
+	.small-text {
+		margin-top: 8px;
+	}
 }
 
 .contact-description,
@@ -31,9 +38,28 @@
 
 .contact-list {
 	padding-left: 0;
+	margin-top: 23px;
 	list-style: none;
 
 	.contact-list-item {
-		padding-left: 30px;
+		padding-left: 24px;
+
+		&.address {
+			background: url("assets/icons/location.svg")3px center no-repeat;
+		}
+
+		&.phone-number {
+			background: url("assets/icons/phone.svg")3px center no-repeat;
+		}
+
+		&.email {
+			background: url("assets/icons/mail.svg")0 center no-repeat;
+		}
 	}
+}
+
+.copyright {
+	margin-left: 3px;
+	margin-top: 8px;
+	color: #666d89;
 }

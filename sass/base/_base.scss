@@ -28,8 +28,13 @@ html {
 }
 
 .contact-form-block {
+	padding-top: 25px;
 	background-color: $color-red-bg;
 	border-bottom: 6px solid #ea676b;
+
+	.container {
+		padding-bottom: 50px;
+	}
 }
 
 .form-wrapper {
@@ -43,12 +48,16 @@ html {
 	.footer-wrapper {
 		padding-top: 0;
 		padding-bottom: 0;
-		min-height: 76px;
 
 		.wrap-text-block {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			min-height: 80px;
+
+			.socials {
+				margin-top: 12px;
+			}
 		}
 	}
 }

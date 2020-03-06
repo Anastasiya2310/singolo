@@ -496,8 +496,12 @@ html {
 }
 
 .contact-form-block {
+  padding-top: 25px;
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
+}
+.contact-form-block .container {
+  padding-bottom: 50px;
 }
 
 .form-wrapper {
@@ -511,12 +515,15 @@ html {
 .footer .footer-wrapper {
   padding-top: 0;
   padding-bottom: 0;
-  min-height: 76px;
 }
 .footer .footer-wrapper .wrap-text-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 80px;
+}
+.footer .footer-wrapper .wrap-text-block .socials {
+  margin-top: 12px;
 }
 
 @font-face {
@@ -592,7 +599,16 @@ html {
 .contact-heading {
   color: #f0d8d9;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.contact-info .contact-heading {
+  margin-bottom: 0;
+}
+
+.contact-form-block .heading-2 {
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 @font-face {
@@ -697,6 +713,7 @@ html {
 
 .linkedin {
   background: url("assets/icons/icon-linkedin.svg") 0 0 no-repeat;
+  margin-right: 0;
 }
 .linkedin:hover {
   background: url("assets/icons/icon-linkedin-hover.svg") 0 0 no-repeat;
@@ -843,10 +860,15 @@ html {
 
 .about-description,
 .contact-list,
-.small-text {
+.small-text,
+.copyright {
   font-family: "Lato-Regular", sans-serif;
   font-size: 1.2rem;
   line-height: 21.56px;
+}
+
+.form-wrapper .small-text {
+  margin-top: 8px;
 }
 
 .contact-description,
@@ -860,10 +882,26 @@ html {
 
 .contact-list {
   padding-left: 0;
+  margin-top: 23px;
   list-style: none;
 }
 .contact-list .contact-list-item {
-  padding-left: 30px;
+  padding-left: 24px;
+}
+.contact-list .contact-list-item.address {
+  background: url("assets/icons/location.svg") 3px center no-repeat;
+}
+.contact-list .contact-list-item.phone-number {
+  background: url("assets/icons/phone.svg") 3px center no-repeat;
+}
+.contact-list .contact-list-item.email {
+  background: url("assets/icons/mail.svg") 0 center no-repeat;
+}
+
+.copyright {
+  margin-left: 3px;
+  margin-top: 8px;
+  color: #666d89;
 }
 
 @font-face {
@@ -992,7 +1030,7 @@ html {
   font-style: normal;
 }
 .form-wrapper {
-  margin-top: 50px;
+  margin-top: 43px;
 }
 .form-wrapper .contact-form {
   min-width: 620px;
@@ -1003,9 +1041,9 @@ html {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 15px;
-  margin-bottom: 16px;
-  background-color: rgba(214, 86, 79, 0.7);
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  background-color: #d6564f;
   border-radius: 5px;
   border: none;
   font-family: "Lato-Regular", sans-serif;
@@ -1023,6 +1061,7 @@ html {
 }
 .form-wrapper .contact-form textarea {
   resize: none;
+  min-height: 203px;
 }
 
 /*# sourceMappingURL=singolo3.css.map */
