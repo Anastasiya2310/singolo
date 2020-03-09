@@ -473,6 +473,7 @@ html {
 }
 
 .block-centered {
+  box-sizing: border-box;
   max-width: 1020px;
   margin: 0 auto;
 }
@@ -521,9 +522,6 @@ html {
   justify-content: space-between;
   align-items: center;
   min-height: 80px;
-}
-.footer .footer-wrapper .wrap-text-block .socials {
-  margin-top: 12px;
 }
 
 @font-face {

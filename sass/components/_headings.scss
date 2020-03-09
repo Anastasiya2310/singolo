@@ -5,17 +5,45 @@
 	display: none;
 }
 
+.heading-1 {
+	font-family: $font-lato-black;
+	font-size: 2.5rem;
+}
+
+.header {
+	font-size: 1.8rem;
+
+	a {
+		font-family: $font-lato-bold;
+		color: #ffffff;
+		text-transform: uppercase;
+		
+		&.header-logo {
+			font-size: 2.5rem;
+		}
+
+		&:hover {
+			color: $color-red-bg;
+			cursor: pointer;
+		}
+
+		span {
+			color: $color-red-bg; 
+		}
+	}
+}
+
 .heading-2 {
 	font-family: $font-lato-black;
 	font-size: 3rem;
 	color: $color-heading;
-	line-height: 17.86px;
+	line-height: 30px;
 	letter-spacing: 0.3px;
 	text-transform: capitalize;
 }
 
 .heading-3 {
-	max-height: 19px;
+	max-height: 25px;
 	overflow: hidden;
 	font-family: $font-lato-black;
 	font-size: 1.8rem;
