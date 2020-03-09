@@ -1,4 +1,4 @@
-# singolo. Part 2
+# singolo. Implementation
 
-Add sass syntax. 
-singolo2.css was placed just according task requirement (this case is not for real project)
+Add sass syntax for singolo part1. 
+Fix issue with styles of diff project parts
