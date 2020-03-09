@@ -1,6 +1,10 @@
 @import "../base/_fonts.scss";
 @import "../abstracts/_variables.scss";
 
+.portfolio-block {
+	padding-top: 17px;
+}
+
 .portfolio-list {
 	display: flex;
 	max-height: 620px;

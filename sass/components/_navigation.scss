@@ -1,0 +1,9 @@
+@import "../abstracts/_variables.scss";
+
+.main-menu {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-flow: row wrap;
+	padding: 0;
+}
