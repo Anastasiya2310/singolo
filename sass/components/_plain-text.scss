@@ -1,4 +1,3 @@
-@import "../base/_fonts.scss";
 @import "../abstracts/_variables.scss";
 
 .description {
@@ -49,6 +48,14 @@
 
 	.contact-list-item {
 		padding-left: 24px;
+
+		a {
+			color: $color-text-red-block;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 
 		&.address {
 			background: url("assets/icons/location.svg")3px center no-repeat;

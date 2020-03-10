@@ -1,5 +1,4 @@
 @import "../abstracts/_variables.scss";
-@import "../base/_fonts.scss";
 
 .services-items {
 	display: flex;
@@ -8,9 +7,12 @@
 	list-style-type: none;
 
 	p {
+		max-height: 63px;
+		overflow: hidden;
 		font-family: $font-lato-regular;
 		font-size: 1.2rem;
 		line-height: 2;
+		text-align: justify;
 	}
 
 	.outer {
