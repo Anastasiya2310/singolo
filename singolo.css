@@ -581,27 +581,18 @@ p {
   display: none;
 }
 
-.heading-1 {
-  font-family: "Lato-Black", sans-serif;
-  font-size: 2.5rem;
-}
-
-.header {
-  font-size: 1.8rem;
-}
-.header a {
+.heading-1 a.header-logo {
   font-family: "Lato-Bold", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
   color: #ffffff;
   text-transform: uppercase;
 }
-.header a.header-logo {
-  font-size: 2.5rem;
-}
-.header a:hover {
+.heading-1 a.header-logo:hover {
   color: #f06c64;
   cursor: pointer;
 }
-.header a span {
+.heading-1 a.header-logo span {
   color: #f06c64;
 }
 
@@ -1209,11 +1200,24 @@ p {
   font-style: normal;
 }
 .main-menu {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-flow: row wrap;
+  width: 425px;
   padding: 0;
+  margin-top: 20px;
+}
+.main-menu .menu-item {
+  display: inline-block;
+  padding: 0 13.5px;
+  letter-spacing: -0.2px;
+}
+.main-menu a {
+  font-family: "Lato-Bold", sans-serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.main-menu a:hover {
+  color: #f06c64;
+  cursor: pointer;
 }
 
 @font-face {

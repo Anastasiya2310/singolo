@@ -5,21 +5,13 @@
 }
 
 .heading-1 {
-	font-family: $font-lato-black;
-	font-size: 2.5rem;
-}
 
-.header {
-	font-size: 1.8rem;
-
-	a {
+	a.header-logo {
 		font-family: $font-lato-bold;
+		font-size: 2.5rem;
+		letter-spacing: -0.5px;
 		color: #ffffff;
 		text-transform: uppercase;
-		
-		&.header-logo {
-			font-size: 2.5rem;
-		}
 
 		&:hover {
 			color: $color-red-bg;
@@ -31,6 +23,10 @@
 		}
 	}
 }
+
+// .header {
+// 	font-size: 1.8rem;
+// }
 
 .heading-2 {
 	font-family: $font-lato-black;
