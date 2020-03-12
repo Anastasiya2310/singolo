@@ -1224,13 +1224,16 @@ p {
   padding: 0 13.5px;
   letter-spacing: -0.2px;
 }
-.main-menu a {
+.main-menu .menu-item.active a {
+  color: #f06c64;
+}
+.main-menu .menu-item a {
   font-family: "Lato-Bold", sans-serif;
   color: #ffffff;
   font-size: 1.2rem;
   text-transform: uppercase;
 }
-.main-menu a:hover {
+.main-menu .menu-item a:hover {
   color: #f06c64;
   cursor: pointer;
 }

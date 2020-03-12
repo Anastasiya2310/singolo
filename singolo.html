@@ -13,35 +13,35 @@
         </h1>
       </div>
       <nav class="navigation">
-        <ul class="main-menu">
-          <li class="menu-item">
-            <a href="/home" title="Home">Home</a>
+        <ul class="main-menu" id="menu">
+          <li class="menu-item active">
+            <a href="#" title="Home">Home</a>
           </li>
           <li class="menu-item">
-            <a href="/services" title="Services">Services</a>
+            <a href="#services" title="Services">Services</a>
           </li>
           <li class="menu-item">
-            <a href="/portfolio" title="Portfolio">Portfolio</a>
+            <a href="#portfolio" title="Portfolio">Portfolio</a>
           </li>
           <li class="menu-item">
-            <a href="/about" title="About">About</a>
+            <a href="#about" title="About">About</a>
           </li>
           <li class="menu-item">
-            <a href="/contact" title="Contact">Contact</a>
+            <a href="#contact" title="Contact">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <div class="main block-centered">
-      <div class="block-slider">
+      <div class="block-slider" id="slider">
         <div class="slider-item">
-          <div class="phone vertical-orient">
+          <div class="phone vertical-orient switch-on" id="phone-vertical">
             <span class="phone-camera"></span>
             <span class="phone-dynamic"></span>
             <img src="assets/yellow_img.png" class="phone-img vertical-img" title="Vertical phone image" />
             <span class="phone-button"></span>
           </div>
-          <div class="phone horizont-orient">
+          <div class="phone horizont-orient switch-on" id="phone-horizontal">
             <span class="phone-camera"></span>
             <span class="phone-dynamic"></span>
             <img src="assets/blue_img.png" class="phone-img horizontal-img" title="Horizontal phone image" />
@@ -56,7 +56,7 @@
           <img src="assets/icons/next-arr.png" title="Next arrow slider"/>
         </div>
       </div>
-      <section class="block-services">
+      <section class="block-services" id="services">
         <h2 class="heading-2">Our services</h2>
         <p class="services-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <ul class="services-items flex-container outer">
@@ -140,7 +140,7 @@
           </li>
         </ul>
       </section>
-      <div class="portfolio-block block-centered">
+      <div class="portfolio-block block-centered" id="portfolio">
         <div class="container">
           <div class="wrap-text-block">
             <h2 class="heading-2">Portfolio</h2>
@@ -200,7 +200,7 @@
           </div>
         </div>
       </div>
-      <div class="about-block block-centered">
+      <div class="about-block block-centered" id="about">
         <div class="container">
           <div class="wrap-text-block">
             <h2 class="heading-2">About us</h2>
@@ -267,7 +267,7 @@
           </ul>
         </div>
       </div>
-      <div class="contact-form-block block-centered">
+      <div class="contact-form-block block-centered" id="contact">
         <div class="container">
           <div class="wrap-text-block">
             <h2 class="heading-2 contact-heading">Get a Quote</h2>
@@ -322,4 +322,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
