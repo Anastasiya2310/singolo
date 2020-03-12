@@ -24,17 +24,19 @@
 	}
 }
 
-// .header {
-// 	font-size: 1.8rem;
-// }
-
 .heading-2 {
 	font-family: $font-lato-black;
 	font-size: 3rem;
 	color: $color-heading;
 	line-height: 30px;
-	letter-spacing: 0.3px;
+	letter-spacing: -0.3px;
 	text-transform: capitalize;
+}
+
+.block-services {
+	.heading-2 {
+		padding-top: 3px;
+	}
 }
 
 .heading-3 {
@@ -49,7 +51,7 @@
 .contact-heading {
 	color: $color-text-red-block;
 	margin-top: 0;
-	margin-bottom: 25px;
+	margin-bottom: 22px;
 }
 
 .contact-info {
@@ -61,6 +63,6 @@
 .contact-form-block {
 	.heading-2 {
 		text-transform: none;
-		letter-spacing: 0;
+		letter-spacing: -0.2px;
 	}
 }
