@@ -4,7 +4,13 @@
 	align-items: center;
 	padding-left: 0;
 	list-style: none;
-	margin-top: 25px;
+	margin-top: 30px;
+}
+
+.footer-wrapper {
+	.socials {
+		margin-top: 10px;
+	}
 }
 
 .social-item {
@@ -59,7 +65,7 @@
 
 .linkedin {
 	background: url('assets/icons/icon-linkedin.svg')0 0 no-repeat;
-	margin-right: 0;
+	margin-right: -2px;
 
 	&:hover {
 		background: url('assets/icons/icon-linkedin-hover.svg')0 0 no-repeat;
