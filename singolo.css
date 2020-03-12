@@ -1059,7 +1059,6 @@ p {
   background-color: #f2f2f2;
   border-radius: 27px;
 }
-
 .vertical-orient {
   left: 112px;
   top: 52px;
@@ -1108,19 +1107,35 @@ p {
   border-radius: 3px;
 }
 
-.phone-img {
+.screen-vertical {
   position: absolute;
-}
-
-.vertical-img {
+  width: 194px;
+  height: 334px;
   top: 62px;
   left: 11px;
+  background-color: black;
 }
 
-.horizontal-img {
+.screen-horizontal {
+  position: absolute;
+  width: 334px;
+  height: 194px;
   top: 134px;
   left: -62px;
   transform: rotate(-90deg);
+  background-color: black;
+}
+
+.phone-img {
+  position: absolute;
+  opacity: 1;
+}
+.phone-img.switch-off {
+  opacity: 0;
+}
+
+.switch-off .phone-img {
+  opacity: 0;
 }
 
 .phone-button {
