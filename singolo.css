@@ -675,6 +675,14 @@ p {
 .portfolio-item {
   margin-bottom: 18px;
 }
+.portfolio-item.active-work img {
+  border: 5px solid #f06c64;
+  width: 210px;
+  height: 177px;
+}
+.portfolio-item:hover {
+  cursor: pointer;
+}
 
 .socials {
   display: flex;
@@ -779,6 +787,10 @@ p {
 .tags-item:last-child {
   margin-right: 0;
 }
+.tags-item.active-tag .tags-item-link {
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+}
 
 .tags-item-link {
   padding: 3px 6px;
@@ -791,6 +803,7 @@ p {
 .tags-item-link:hover {
   color: #f2f2f2;
   border: 1px solid #f2f2f2;
+  cursor: pointer;
 }
 
 @font-face {
@@ -1129,9 +1142,6 @@ p {
 .phone-img {
   position: absolute;
   opacity: 1;
-}
-.phone-img.switch-off {
-  opacity: 0;
 }
 
 .switch-off .phone-img {

@@ -17,4 +17,16 @@
 
 .portfolio-item {
 	margin-bottom: 18px;
+
+	&.active-work {
+		img {
+			border: 5px solid $color-red-bg;
+			width: 210px;
+			height: 177px;
+		}
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
 }
