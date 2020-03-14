@@ -47,13 +47,13 @@
 		} else {
 			document.getElementById('subject').innerHTML= "Без темы";
 		}
+
 		let description = document.getElementById('description-field').value;
-		if(subject) {
+		if(description) {
 			document.getElementById('description').innerHTML="Описание: " + description;
 		} else {
 			document.getElementById('description').innerHTML= "Без описания";
 		}
-
 	});
 
 	// let subject = document.getElementById('subject-field').value();
@@ -63,7 +63,5 @@
 	document.getElementById('close-button').addEventListener('click', event => {
 		document.getElementById('close-button').closest('#overflow').classList.add('hidden');
 	});
-
-
 
 })();
