@@ -5,6 +5,9 @@
   const SLIDER = document.getElementById('slider');
   const PORTFOLIO_LIST = document.getElementById('portfolio-list');
   const TAGS = document.getElementById('tags');
+  // const PREVIOUS = document.getElementById('previous');
+  // const NEXT = document.getElementById('next');
+  const SUBMIT = document.getElementById('button-submit');
   
   MENU.addEventListener('click', event => {
     MENU_ITEM.forEach(el => el.classList.remove('active'));
@@ -33,5 +36,34 @@
 		PORTFOLIO_LIST.insertBefore(theLastChild, lastElemSibling2);
 		PORTFOLIO_LIST.insertBefore(lastElemSibling4, lastElemSibling2);
 	});
+
+	SUBMIT.addEventListener('click', event => {
+		event.preventDefault();
+		document.getElementById('overflow').classList.remove('hidden');
+
+		let subject = document.getElementById('subject-field').value;
+		if(subject) {
+			document.getElementById('subject').innerHTML="Тема: " + subject;
+		} else {
+			document.getElementById('subject').innerHTML= "Без темы";
+		}
+		let description = document.getElementById('description-field').value;
+		if(subject) {
+			document.getElementById('description').innerHTML="Описание: " + description;
+		} else {
+			document.getElementById('description').innerHTML= "Без описания";
+		}
+
+	});
+
+	// let subject = document.getElementById('subject-field').value();
+	// console.log(subject);
+	//document.getElementById('subject').innerHTML=subject;
+
+	document.getElementById('close-button').addEventListener('click', event => {
+		document.getElementById('close-button').closest('#overflow').classList.add('hidden');
+	});
+
+
 
 })();

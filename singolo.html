@@ -34,7 +34,7 @@
     </header>
     <div class="main block-centered">
       <div class="block-slider" id="slider">
-        <div class="slider-item">
+        <div class="slider-item visible">
           <div class="phone vertical-orient" id="phone-vertical">
             <span class="phone-camera"></span>
             <span class="phone-dynamic"></span>
@@ -53,10 +53,14 @@
           </div>
         </div>
 
-        <div class="slider-controller prev-arr">
+        <div class="slider-item">
+          <img src="assets/slide2.png" alt="Phone in blue bg">
+        </div>
+
+        <div class="slider-controller prev-arr" id="previous">
           <img src="assets/icons/prev-arr.png" title="Previous arrow slider"/>
         </div>
-        <div class="slider-controller next-arr">
+        <div class="slider-controller next-arr" id="next">
           <img src="assets/icons/next-arr.png" title="Next arrow slider"/>
         </div>
       </div>
@@ -277,12 +281,12 @@
             <h2 class="heading-2 contact-heading">Get a Quote</h2>
             <p class="description description-title contact-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="form-wrapper">
-              <form action="/action_page.php" method="post" class="contact-form">
+              <form action="/action_page.php" method="post" class="contact-form" id="contact-form">
                 <input type="text" name="user-name" placeholder="Name (Required)" required>
                 <input type="email" name="email" placeholder="Email (Required)" required>
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea placeholder="Describe your project in detail..."></textarea>
-                <input type="submit" class="button-submit" value="Send form">
+                <input type="text" name="subject" id="subject-field" placeholder="Subject">
+                <textarea id="description-field" placeholder="Describe your project in detail..."></textarea>
+                <input type="submit" class="button-submit" id="button-submit" value="Send form">
               </form>
               <div class="contact-info">
                 <h3 class="heading-3 contact-heading">Contact Information</h3>
@@ -300,6 +304,14 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="contact-overflow hidden" id="overflow">
+          <div class="form-alert-window">
+            <h3>Письмо отправлено</h3>
+            <p id="subject">Без темы</p>
+            <p id="description">Без описания</p>
+            <button class="close-button" id="close-button">Ok</button>
           </div>
         </div>
       </div>
