@@ -5,8 +5,6 @@
   const SLIDER = document.getElementById('slider');
   const PORTFOLIO_LIST = document.getElementById('portfolio-list');
   const TAGS = document.getElementById('tags');
-  // const PREVIOUS = document.getElementById('previous');
-  // const NEXT = document.getElementById('next');
   const SUBMIT = document.getElementById('button-submit');
   
   MENU.addEventListener('click', event => {
@@ -15,7 +13,10 @@
   });
 
   SLIDER.addEventListener('click', event => {
-  	event.target.closest('.phone').classList.toggle('switch-off');
+  	let phone = event.target.closest('.phone');
+  	if (phone) {
+  		phone.classList.toggle('switch-off');
+  	}
   });
 
   PORTFOLIO_LIST.addEventListener('click', event => {
@@ -56,12 +57,58 @@
 		}
 	});
 
-	// let subject = document.getElementById('subject-field').value();
-	// console.log(subject);
-	//document.getElementById('subject').innerHTML=subject;
-
 	document.getElementById('close-button').addEventListener('click', event => {
 		document.getElementById('close-button').closest('#overflow').classList.add('hidden');
+	});
+
+	// slider 
+	let slides = document.querySelectorAll('.slider-item');
+	let activeItem = 0;
+	let isEnabled = true;
+
+	function changeActiveItem(n) {
+		activeItem = (n + slides.length) % slides.length;
+	}
+
+	function hideItem(direction) {
+		isEnabled = false;
+		slides[activeItem].classList.add(direction);
+		slides[activeItem].addEventListener('animationend', function(){
+			this.classList.remove('visible', direction);
+		});
+	}
+
+	function showItem(direction) {
+		slides[activeItem].classList.add('next', direction);
+		slides[activeItem].addEventListener('animationend', function(){
+			this.classList.remove('next', direction);
+			this.classList.add('visible');
+			isEnabled = true;
+		});
+	}
+
+	function previousItem(n) {
+		hideItem('to-right');
+		changeActiveItem(n - 1);
+		showItem('from-left');
+	}
+
+	function nextItem(n) {
+		hideItem('to-left');
+		changeActiveItem(n + 1);
+		showItem('from-right');
+	}
+
+	document.getElementById('previous').addEventListener('click', function() {
+		if(isEnabled) {
+			previousItem(activeItem);
+		}
+	});
+
+	document.getElementById('next').addEventListener('click', function() {
+		if(isEnabled) {
+			nextItem(activeItem);
+		}
 	});
 
 })();
