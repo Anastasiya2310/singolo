@@ -12,6 +12,24 @@
     event.target.parentElement.classList.add('active');
   });
 
+  document.addEventListener('scroll', onScroll);
+  function onScroll(event) {
+  	const windowPosition = window.scrollY + 95;
+  	const scrollBlocks = document.querySelectorAll('section');
+  	const navLinks = document.querySelectorAll('#menu a');
+
+  	scrollBlocks.forEach(el => {
+  		if(el.offsetTop <= windowPosition && (el.offsetTop + el.offsetHeight) > windowPosition) {
+  			navLinks.forEach(link => {
+  				link.parentElement.classList.remove('active');
+  				if(el.getAttribute('id') === link.getAttribute('href').substring(1)) {
+  					link.parentElement.classList.add('active');
+  				}
+  			})
+  		}
+  	})
+  };
+
   SLIDER.addEventListener('click', event => {
   	let phone = event.target.closest('.phone');
   	if (phone) {
@@ -58,6 +76,7 @@
 	});
 
 	document.getElementById('close-button').addEventListener('click', event => {
+		document.getElementById('contact-form').reset();
 		document.getElementById('close-button').closest('#overflow').classList.add('hidden');
 	});
 
