@@ -6,6 +6,7 @@
   const PORTFOLIO_LIST = document.getElementById('portfolio-list');
   const TAGS = document.getElementById('tags');
   const SUBMIT = document.getElementById('button-submit');
+  const scrollBlocks = document.querySelectorAll('section');
   
   MENU.addEventListener('click', event => {
     MENU_ITEM.forEach(el => el.classList.remove('active'));
@@ -13,9 +14,9 @@
   });
 
   document.addEventListener('scroll', onScroll);
+	let headerHeight = document.getElementById('header').clientHeight;
   function onScroll(event) {
-  	const windowPosition = window.scrollY + 95;
-  	const scrollBlocks = document.querySelectorAll('section');
+  	const windowPosition = window.scrollY + headerHeight;
   	const navLinks = document.querySelectorAll('#menu a');
 
   	scrollBlocks.forEach(el => {
