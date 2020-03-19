@@ -6,57 +6,67 @@
     <link rel="stylesheet" href="singolo.css">
   </head>
   <body>
-    <header class="header block-centered">
+    <header class="header block-centered" id="header">
       <div class="logo-container">
         <h1 class="heading-1">
           <a href="/" title="logo" class="header-logo">Singolo<span>*</span></a>
         </h1>
       </div>
       <nav class="navigation">
-        <ul class="main-menu">
-          <li class="menu-item">
-            <a href="/home" title="Home">Home</a>
+        <ul class="main-menu" id="menu">
+          <li class="menu-item active">
+            <a href="#slider" title="Home">Home</a>
           </li>
           <li class="menu-item">
-            <a href="/services" title="Services">Services</a>
+            <a href="#services" title="Services">Services</a>
           </li>
           <li class="menu-item">
-            <a href="/portfolio" title="Portfolio">Portfolio</a>
+            <a href="#portfolio" title="Portfolio">Portfolio</a>
           </li>
           <li class="menu-item">
-            <a href="/about" title="About">About</a>
+            <a href="#about" title="About">About</a>
           </li>
           <li class="menu-item">
-            <a href="/contact" title="Contact">Contact</a>
+            <a href="#contact" title="Contact">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <div class="main block-centered">
-      <div class="block-slider">
-        <div class="slider-item">
-          <div class="phone vertical-orient">
-            <span class="phone-camera"></span>
-            <span class="phone-dynamic"></span>
-            <img src="assets/yellow_img.png" class="phone-img vertical-img" title="Vertical phone image" />
-            <span class="phone-button"></span>
+      <section class="block-slider" id="slider">
+        <div class="slider-item-wrapper">
+          <div class="slider-item visible">
+            <div class="phone vertical-orient" id="phone-vertical">
+              <span class="phone-camera"></span>
+              <span class="phone-dynamic"></span>
+              <div class="screen-vertical">
+                <img src="assets/yellow_img.png" class="phone-img vertical-img" title="Vertical phone image" />
+              </div>
+              <span class="phone-button"></span>
+            </div>
+            <div class="phone horizont-orient" id="phone-horizontal">
+              <span class="phone-camera"></span>
+              <span class="phone-dynamic"></span>
+              <div class="screen-horizontal">
+                <img src="assets/blue_img.png" class="phone-img horizontal-img" title="Horizontal phone image" />
+              </div>
+              <span class="phone-button"></span>
+            </div>
           </div>
-          <div class="phone horizont-orient">
-            <span class="phone-camera"></span>
-            <span class="phone-dynamic"></span>
-            <img src="assets/blue_img.png" class="phone-img horizontal-img" title="Horizontal phone image" />
-            <span class="phone-button"></span>
+
+          <div class="slider-item">
+            <img src="assets/slide2.png" alt="Phone in blue bg">
           </div>
         </div>
 
-        <div class="slider-controller prev-arr">
+        <div class="slider-controller prev-arr" id="previous">
           <img src="assets/icons/prev-arr.png" title="Previous arrow slider"/>
         </div>
-        <div class="slider-controller next-arr">
+        <div class="slider-controller next-arr" id="next">
           <img src="assets/icons/next-arr.png" title="Next arrow slider"/>
         </div>
-      </div>
-      <section class="block-services">
+      </section>
+      <section class="block-services" id="services">
         <h2 class="heading-2">Our services</h2>
         <p class="services-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <ul class="services-items flex-container outer">
@@ -140,26 +150,26 @@
           </li>
         </ul>
       </section>
-      <div class="portfolio-block block-centered">
+      <section class="portfolio-block block-centered" id="portfolio">
         <div class="container">
           <div class="wrap-text-block">
             <h2 class="heading-2">Portfolio</h2>
             <p class="description description-title">Duis mollis, est non commodo luctus, nisi erat porttitor ligula</p>
-            <ul class="tags">
-              <li class="tags-item">
-                <a href="/" class="tags-item-link">All</a>
+            <ul class="tags" id="tags">
+              <li class="tags-item active-tag">
+                <span class="tags-item-link">All</span>
               </li>
               <li class="tags-item">
-                <a href="/" class="tags-item-link">Web design</a>
+                <span class="tags-item-link">Web design</span>
               </li>
               <li class="tags-item">
-                <a href="/" class="tags-item-link">Graphic design</a>
+                <span class="tags-item-link">Graphic design</span>
               </li>
               <li class="tags-item">
-                <a href="/" class="tags-item-link">Artwork</a>
+                <span class="tags-item-link">Artwork</span>
               </li>
             </ul>
-            <ul class="portfolio-list">
+            <ul class="portfolio-list" id="portfolio-list">
               <li class="portfolio-item">
                 <img src="assets/portfolio/ship.png" alt="ship"/>
               </li>
@@ -199,8 +209,8 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="about-block block-centered">
+      </section>
+      <section class="about-block block-centered" id="about">
         <div class="container">
           <div class="wrap-text-block">
             <h2 class="heading-2">About us</h2>
@@ -266,19 +276,19 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="contact-form-block block-centered">
+      </section>
+      <section class="contact-form-block block-centered" id="contact">
         <div class="container">
           <div class="wrap-text-block">
             <h2 class="heading-2 contact-heading">Get a Quote</h2>
             <p class="description description-title contact-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="form-wrapper">
-              <form action="/action_page.php" method="post" class="contact-form">
+              <form action="/action_page.php" method="post" class="contact-form" id="contact-form">
                 <input type="text" name="user-name" placeholder="Name (Required)" required>
                 <input type="email" name="email" placeholder="Email (Required)" required>
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea placeholder="Describe your project in detail..."></textarea>
-                <input type="submit" class="button-submit" value="Send form">
+                <input type="text" name="subject" id="subject-field" placeholder="Subject">
+                <textarea id="description-field" placeholder="Describe your project in detail..."></textarea>
+                <input type="submit" class="button-submit" id="button-submit" value="Send form">
               </form>
               <div class="contact-info">
                 <h3 class="heading-3 contact-heading">Contact Information</h3>
@@ -298,7 +308,15 @@
             </div>
           </div>
         </div>
-      </div>
+        <div class="contact-overflow hidden" id="overflow">
+          <div class="form-alert-window">
+            <h3>Письмо отправлено</h3>
+            <p id="subject">Без темы</p>
+            <p id="description">Без описания</p>
+            <button class="close-button" id="close-button">Ok</button>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer block-centered">
       <div class="container footer-wrapper">
@@ -322,4 +340,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>

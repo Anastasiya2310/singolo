@@ -18,6 +18,13 @@
 	&:last-child {
 		margin-right: 0;
 	}
+
+	&.active-tag {
+		.tags-item-link {
+			border: 1px solid $color-light-bg;
+			color: $color-light-bg;
+		}
+	}
 }
 
 .tags-item-link {
@@ -31,5 +38,6 @@
 	&:hover {
 		color: $color-light-bg;
 		border: 1px solid $color-light-bg;
+		cursor: pointer;
 	}
 }
