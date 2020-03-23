@@ -2,6 +2,7 @@
 @import "base/_fonts.scss";
 @import "abstracts/_variables.scss";
 @import "base/_base.scss";
+
 @import "components/_headings.scss";
 @import "components/_portfolio-item.scss";
 @import "components/_socials.scss";
@@ -12,3 +13,5 @@
 @import "components/_block-slider.scss";
 @import "components/_navigation.scss";
 @import "components/_services.scss";
+
+@import "base/_responsive.scss";

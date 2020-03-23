@@ -1477,4 +1477,94 @@ p {
   line-height: 1.75;
 }
 
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("./assets/fonts/lato_bold/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/lato_bold/Lato-Bold.woff") format("woff"), url("./assets/fonts/lato_bold/Lato-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato-Black";
+  src: url("./assets/fonts/lato_black/Lato-Black.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/lato_black/Lato-Black.woff") format("woff"), url("./assets/fonts/lato_black/Lato-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: url("./assets/fonts/lato_light/Lato-Light.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/lato_light/Lato-Light.woff") format("woff"), url("./assets/fonts/lato_light/Lato-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("./assets/fonts/lato_regular/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/lato_regular/Lato-Regular.woff") format("woff"), url("./assets/fonts/lato_regular/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (max-width: 768px) {
+  .phone {
+    width: 162.36px;
+    height: 344.26px;
+    border-radius: 20px;
+  }
+  .phone .phone-img {
+    width: 100%;
+  }
+  .phone .phone-button {
+    width: 31.5px;
+    height: 31.5px;
+    margin-left: -15px;
+  }
+  .phone .phone-button:after {
+    width: 12.3px;
+    height: 12.3px;
+    border: 1px solid #bababa;
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  .phone .phone-dynamic {
+    width: 27px;
+    height: 3px;
+    top: 27px;
+    margin-left: -14px;
+  }
+  .phone .phone-camera {
+    width: 6.6px;
+    height: 6.6px;
+    top: 12.4px;
+  }
+  .phone .phone-camera:after {
+    width: 2.9px;
+    height: 2.9px;
+    margin-top: -1.4px;
+    margin-left: -1.5px;
+  }
+  .phone .screen-vertical {
+    width: calc(100% - 20px);
+    height: 250px;
+    top: 49px;
+    left: 10px;
+  }
+  .phone .screen-horizontal {
+    height: 141px;
+    width: 250px;
+    top: 100px;
+    left: -45px;
+  }
+
+  .vertical-orient {
+    left: 83.19px;
+    top: 40.59px;
+  }
+
+  .horizont-orient {
+    left: 54vw;
+  }
+
+  .block-slider {
+    height: 447px;
+    max-height: 447px;
+  }
+}
+
 /*# sourceMappingURL=singolo.css.map */
