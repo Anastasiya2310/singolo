@@ -1,6 +1,7 @@
 @import "base/_normalize.scss";
 @import "base/_fonts.scss";
 @import "abstracts/_variables.scss";
+@import "abstracts/_mixins.scss";
 @import "base/_base.scss";
 
 @import "components/_headings.scss";
@@ -14,4 +15,4 @@
 @import "components/_navigation.scss";
 @import "components/_services.scss";
 
-@import "base/_responsive.scss";
+//@import "base/_responsive.scss";

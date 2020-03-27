@@ -4,8 +4,12 @@
 	position: relative;
 	height: 594px;
 	max-height: 594px;
-	
 
+	@include desktop {
+		height: 447px;
+		max-height: 447px;
+	}
+	
 	.slider-item-wrapper {
 		width: 100%;
 		height: 100%;
@@ -17,6 +21,8 @@
 }
 
 .slider-item {
+	width: 100%;
+	height: 100%;
 	z-index: 10;
 	position: absolute;
 	left: 0;
@@ -28,6 +34,12 @@
 	&.next {
 		display: block;
 		z-index: 100;
+	}
+}
+
+.static-img {
+	img {
+		width: 100%;
 	}
 }
 
@@ -70,34 +82,62 @@
 	}
 }
 
-
 .phone {
 	position: absolute;
-	width: 215px;
-	height: 458px;
+	width: calc(( 215/1020 ) * 100%);
+	height: calc(( 458/594) * 100%);
 	background-color: #f2f2f2;
-	border-radius: 27px;						
+	border-radius: 27px;	
+	overflow: hidden;
+
+	@include desktop {
+		width: 162px;
+		height: 344px;
+		border-radius: 18px;
+	}
+
+	@include tablet {
+		width: 21.5%;/*162.36px;*/
+		height: calc(100% - 100px);/*344.26px;*/
+		border-radius: 20px;
+	}					
 }
 
 .vertical-orient {
-	left: 112px;
-	top: 52px;
+	left: calc(( 112/1020 ) * 100%);
+	top: calc(( 52/594 ) * 100%);
 	box-shadow: 25px 25px #eb5d55,
-							20px 20px #eb5d55,
-							15px 15px #eb5d55,
-							10px 10px #eb5d55,
-							5px 5px #eb5d55;
+	20px 20px #eb5d55,
+	15px 15px #eb5d55,
+	10px 10px #eb5d55,
+	5px 5px #eb5d55;
+
+	@include desktop {
+		left: calc(( 83/768 ) * 100%);
+		top: calc(( 52/447 ) * 100%);
+		box-shadow: 20px 20px #eb5d55,
+		15px 15px #eb5d55,
+		10px 10px #eb5d55,
+		5px 5px #eb5d55;
+	}
 }
 
 .horizont-orient {
-	left: 580px;
-	top: 52px;
+	left: calc(( 563/1020 ) * 100%);
+	top: calc(( 52/594 ) * 100%);
 	box-shadow: 25px -25px #eb5d55,
-							20px -20px #eb5d55,
-							15px -15px #eb5d55,
-							10px -10px #eb5d55,
-							5px -5px #eb5d55;
+	20px -20px #eb5d55,
+	15px -15px #eb5d55,
+	10px -10px #eb5d55,
+	5px -5px #eb5d55;
 	transform: rotate(90deg);
+
+	@include desktop {
+		box-shadow: 20px -20px #eb5d55,
+		15px -15px #eb5d55,
+		10px -10px #eb5d55,
+		5px -5px #eb5d55;
+	}
 }
 
 .phone-camera {
@@ -109,6 +149,10 @@
 	height: 10px;
 	background-color: #d8d8d8;
 	border-radius: 50%;
+
+	@include desktop {
+		top: 12px;
+	}
 }
 
 .phone-camera::after {
@@ -133,25 +177,48 @@
 	height: 5px;
 	background-color: #acacac;
 	border-radius: 3px;
+
+	@include desktop {
+		height: 3.7px;
+		top: 27.5px;
+	}
 }
 
 .screen-vertical {
 	position: absolute;
-	width: 194px;
-	height: 334px;
+	width: calc(( 188/216 ) * 100%); 
+	height: calc(( 334/458 ) * 100%);
 	top: 62px;
 	left: 11px;
 	background-color: black;
+	overflow: hidden;
+	border: 2px solid #C7C7C7;
+	border-radius: 5px;
+
+	@include desktop {
+		width: 141px;
+		height: 250.7px;
+		top: 49px;
+		left: 8px;
+	}
 }
 
 .screen-horizontal {
 	position: absolute;
-	width: 334px;
-	height: 194px;
+	width: calc(( 334/216 ) * 100%);
+	height: calc(( 188/458 ) * 100%);
 	top: 134px;
-	left: -62px;
+	left: -60px;
 	transform: rotate(-90deg);
 	background-color: black;
+	border: 2px solid #C7C7C7;
+	border-radius: 5px;
+	overflow: hidden;
+
+	@include desktop {
+		top: 102px;
+		left: -46px;
+	}
 }
 
 .phone-img {
@@ -174,6 +241,13 @@
 	height: 42px;
 	border-radius: 50%;
 	background-color: #fafafa;
+
+	@include desktop {
+		width: 31px;
+		height: 31px;
+		margin-left: -15px;
+		bottom: 6px;
+	}
 }
 
 .phone-button::after {
@@ -181,13 +255,21 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 13px;
-	height: 13px;
+	width: 12px;
+	height: 12px;
 	margin-left: -8px;
 	margin-top: -8px;
 	border: 2px solid #bababa;
 	background-color: #fafafa;
 	border-radius: 4px;
+
+	@include desktop {
+		width: 11px;
+		height: 11px;
+		border: 1px solid #bababa;
+		margin-left: -7px;
+		margin-top: -7px;
+	}
 }
 
 .navigation .flex-items {
@@ -227,8 +309,16 @@
 
 .slider-controller.prev-arr {
 	left: 42px;
+
+	@include desktop {
+		left: 29px;
+	}
 }
 
 .slider-controller.next-arr {
 	right: 40px;
+
+	@include desktop {
+		right: 26px;
+	}
 }
