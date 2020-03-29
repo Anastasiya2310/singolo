@@ -9,3 +9,15 @@
     @content;
   }
 }
+
+@mixin mobile-big {
+  @media (max-width: $mobile-big-breakpoint) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}

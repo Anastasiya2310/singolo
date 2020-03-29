@@ -19,7 +19,7 @@
 		width: calc(100%/3 - 20px);
 		margin-right: 20px;
 
-		@include desktop {
+		@include tablet {
 			width: calc(100%/2 - 60px);
 			margin-right: 60px;
 		}

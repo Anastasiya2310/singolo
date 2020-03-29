@@ -57,29 +57,29 @@
 		PORTFOLIO_LIST.insertBefore(lastElemSibling4, lastElemSibling2);
 	});
 
-	SUBMIT.addEventListener('click', event => {
-		event.preventDefault();
-		document.getElementById('overflow').classList.remove('hidden');
+	// SUBMIT.addEventListener('click', event => {
+	// 	event.preventDefault();
+	// 	document.getElementById('overflow').classList.remove('hidden');
 
-		let subject = document.getElementById('subject-field').value;
-		if(subject) {
-			document.getElementById('subject').innerHTML="Тема: " + subject;
-		} else {
-			document.getElementById('subject').innerHTML= "Без темы";
-		}
+	// 	let subject = document.getElementById('subject-field').value;
+	// 	if(subject) {
+	// 		document.getElementById('subject').innerHTML="Тема: " + subject;
+	// 	} else {
+	// 		document.getElementById('subject').innerHTML= "Без темы";
+	// 	}
 
-		let description = document.getElementById('description-field').value;
-		if(description) {
-			document.getElementById('description').innerHTML="Описание: " + description;
-		} else {
-			document.getElementById('description').innerHTML= "Без описания";
-		}
-	});
+	// 	let description = document.getElementById('description-field').value;
+	// 	if(description) {
+	// 		document.getElementById('description').innerHTML="Описание: " + description;
+	// 	} else {
+	// 		document.getElementById('description').innerHTML= "Без описания";
+	// 	}
+	// });
 
-	document.getElementById('close-button').addEventListener('click', event => {
-		document.getElementById('contact-form').reset();
-		document.getElementById('close-button').closest('#overflow').classList.add('hidden');
-	});
+	// document.getElementById('close-button').addEventListener('click', event => {
+	// 	document.getElementById('contact-form').reset();
+	// 	document.getElementById('close-button').closest('#overflow').classList.add('hidden');
+	// });
 
 	// slider 
 	let slides = document.querySelectorAll('.slider-item');
