@@ -100,6 +100,12 @@
 		width: 21.5%;/*162.36px;*/
 		height: calc(100% - 100px);/*344.26px;*/
 		border-radius: 20px;
+	}
+
+	@include mobile-big {
+		width: calc(( 80/550 ) * 100%);
+		height: calc(( 168/218) * 100%);
+		border-radius: 10px;
 	}					
 }
 
